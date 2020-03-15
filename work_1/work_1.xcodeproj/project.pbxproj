@@ -111,6 +111,7 @@
 		F65A692824095B0700152CDB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F67FD9E72409A0D50091885A /* TabBarModel.swift */,
 				F65A692924095BA600152CDB /* FruitsViewModel.swift */,
 			);
 			path = Models;
@@ -120,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				F67FD9E5240984290091885A /* FruitDetailView.swift */,
-				F67FD9E72409A0D50091885A /* TabBarModel.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";

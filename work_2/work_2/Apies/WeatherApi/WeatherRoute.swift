@@ -10,7 +10,7 @@ import Foundation
 
 enum WeatherRoute: URLRequestConvertible {
     
-    static let apiKey = "9ea1249a6e7bb85fe5a7bdaaa184820e"
+    static let apiKey = ""// Enter key
     static let apiUrl = "http://api.openweathermap.org/data/2.5/"
     
     case getWeather(longitude: Double, latitude: Double)

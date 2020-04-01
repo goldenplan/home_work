@@ -11,7 +11,7 @@
 		F61E3565242DD80C00CDF5B9 /* MovieItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E3563242DD80C00CDF5B9 /* MovieItem+CoreDataClass.swift */; };
 		F61E3566242DD80C00CDF5B9 /* MovieItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E3564242DD80C00CDF5B9 /* MovieItem+CoreDataProperties.swift */; };
 		F61E356C242DF2BB00CDF5B9 /* MovieDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E356B242DF2BB00CDF5B9 /* MovieDBService.swift */; };
-		F61E356E242E12A600CDF5B9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E356D242E12A600CDF5B9 /* Service.swift */; };
+		F61E356E242E12A600CDF5B9 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E356D242E12A600CDF5B9 /* MovieService.swift */; };
 		F61E3571242E180C00CDF5B9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E3570242E180C00CDF5B9 /* Movie.swift */; };
 		F61E3576242E3DC000CDF5B9 /* MovieServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E3575242E3DC000CDF5B9 /* MovieServiceLocator.swift */; };
 		F61E357A242E501B00CDF5B9 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E3579242E501B00CDF5B9 /* MovieViewModel.swift */; };
@@ -33,7 +33,7 @@
 		F63C2766242CBE3000A225E2 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C2765242CBE3000A225E2 /* MovieApi.swift */; };
 		F63C2768242CC04300A225E2 /* MovieSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C2767242CC04300A225E2 /* MovieSearchData.swift */; };
 		F63C276C242CC86A00A225E2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F63C276B242CC86A00A225E2 /* Alamofire */; };
-		F63C276E242CCFCB00A225E2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C276D242CCFCB00A225E2 /* ApiError.swift */; };
+		F63C276E242CCFCB00A225E2 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C276D242CCFCB00A225E2 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		F61E3563242DD80C00CDF5B9 /* MovieItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F61E3564242DD80C00CDF5B9 /* MovieItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F61E356B242DF2BB00CDF5B9 /* MovieDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBService.swift; sourceTree = "<group>"; };
-		F61E356D242E12A600CDF5B9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F61E356D242E12A600CDF5B9 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		F61E3570242E180C00CDF5B9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F61E3575242E3DC000CDF5B9 /* MovieServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceLocator.swift; sourceTree = "<group>"; };
 		F61E3579242E501B00CDF5B9 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		F63C2763242CBDA800A225E2 /* APIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelpers.swift; sourceTree = "<group>"; };
 		F63C2765242CBE3000A225E2 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
 		F63C2767242CC04300A225E2 /* MovieSearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchData.swift; sourceTree = "<group>"; };
-		F63C276D242CCFCB00A225E2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F63C276D242CCFCB00A225E2 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 		F61E356F242E17F000CDF5B9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				F61E356D242E12A600CDF5B9 /* Service.swift */,
+				F61E356D242E12A600CDF5B9 /* MovieService.swift */,
 				F61E3570242E180C00CDF5B9 /* Movie.swift */,
 			);
 			path = Protocols;
@@ -204,7 +204,7 @@
 			children = (
 				F63C2769242CC18900A225E2 /* Movies */,
 				F61E3567242DF0A700CDF5B9 /* Service */,
-				F63C275B242CBA6100A225E2 /* Date */,
+				F63C275B242CBA6100A225E2 /* Data */,
 			);
 			path = ApiService;
 			sourceTree = "<group>";
@@ -219,15 +219,15 @@
 			path = DBService;
 			sourceTree = "<group>";
 		};
-		F63C275B242CBA6100A225E2 /* Date */ = {
+		F63C275B242CBA6100A225E2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				F63C275D242CBA9400A225E2 /* MovieData.swift */,
-				F63C276D242CCFCB00A225E2 /* ApiError.swift */,
+				F63C276D242CCFCB00A225E2 /* AppError.swift */,
 				F63C2767242CC04300A225E2 /* MovieSearchData.swift */,
 				F63C275F242CBBF600A225E2 /* HTTPMethod.swift */,
 			);
-			path = Date;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		F63C275C242CBA7300A225E2 /* Extensions */ = {
@@ -339,14 +339,14 @@
 				F63C2760242CBBF600A225E2 /* HTTPMethod.swift in Sources */,
 				F63C2768242CC04300A225E2 /* MovieSearchData.swift in Sources */,
 				F63C2766242CBE3000A225E2 /* MovieApi.swift in Sources */,
-				F61E356E242E12A600CDF5B9 /* Service.swift in Sources */,
+				F61E356E242E12A600CDF5B9 /* MovieService.swift in Sources */,
 				F61E355E242DD49B00CDF5B9 /* CoreDataStack.swift in Sources */,
 				F61E357C242E54F800CDF5B9 /* UIApplication.swift in Sources */,
 				F63C2762242CBD4A00A225E2 /* ApiService.swift in Sources */,
 				F63C2764242CBDA800A225E2 /* APIHelpers.swift in Sources */,
 				F63C273D242BBE9700A225E2 /* SceneDelegate.swift in Sources */,
 				F63C2758242CB90200A225E2 /* MovieRoute.swift in Sources */,
-				F63C276E242CCFCB00A225E2 /* ApiError.swift in Sources */,
+				F63C276E242CCFCB00A225E2 /* AppError.swift in Sources */,
 				F61E356C242DF2BB00CDF5B9 /* MovieDBService.swift in Sources */,
 				F63C275A242CB96600A225E2 /* URLRequestConvertible.swift in Sources */,
 			);

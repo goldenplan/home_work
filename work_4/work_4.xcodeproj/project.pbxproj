@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		F61B269A2434C34300473E01 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B26992434C34300473E01 /* MovieViewModel.swift */; };
 		F61B269D2434C42700473E01 /* MovieServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B269C2434C42700473E01 /* MovieServiceLocator.swift */; };
-		F61B26A02434C4CA00473E01 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B269F2434C4CA00473E01 /* UIApplication.swift */; };
 		F61B26A52434CCA800473E01 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B26A42434CCA800473E01 /* Movie.swift */; };
 		F61B26AF2434DB2800473E01 /* MovieItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B26AD2434DB2800473E01 /* MovieItem+CoreDataClass.swift */; };
 		F61B26B02434DB2800473E01 /* MovieItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B26AE2434DB2800473E01 /* MovieItem+CoreDataProperties.swift */; };
 		F61B26B22434DB6000473E01 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B26B12434DB6000473E01 /* CoreDataStack.swift */; };
 		F61B26B42434DB8A00473E01 /* MovieDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B26B32434DB8A00473E01 /* MovieDBService.swift */; };
 		F61B26B62434DBCD00473E01 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B26B52434DBCD00473E01 /* MovieService.swift */; };
+		F61B26BC2434ECA300473E01 /* UILibrary in Frameworks */ = {isa = PBXBuildFile; productRef = F61B26BB2434ECA300473E01 /* UILibrary */; };
 		F6DC3FD42433C3FD00559132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC3FD32433C3FD00559132 /* AppDelegate.swift */; };
 		F6DC3FD62433C3FD00559132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC3FD52433C3FD00559132 /* SceneDelegate.swift */; };
 		F6DC3FD92433C3FD00559132 /* work_4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6DC3FD72433C3FD00559132 /* work_4.xcdatamodeld */; };
@@ -29,13 +29,13 @@
 /* Begin PBXFileReference section */
 		F61B26992434C34300473E01 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		F61B269C2434C42700473E01 /* MovieServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceLocator.swift; sourceTree = "<group>"; };
-		F61B269F2434C4CA00473E01 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		F61B26A42434CCA800473E01 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F61B26AD2434DB2800473E01 /* MovieItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F61B26AE2434DB2800473E01 /* MovieItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F61B26B12434DB6000473E01 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F61B26B32434DB8A00473E01 /* MovieDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBService.swift; sourceTree = "<group>"; };
 		F61B26B52434DBCD00473E01 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		F61B26BA2434EC4D00473E01 /* UILibrary */ = {isa = PBXFileReference; lastKnownFileType = text; path = UILibrary; sourceTree = SOURCE_ROOT; };
 		F6DC3FD02433C3FD00559132 /* work_4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = work_4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DC3FD32433C3FD00559132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6DC3FD52433C3FD00559132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61B26BC2434ECA300473E01 /* UILibrary in Frameworks */,
 				F6DC3FEF2433C91700559132 /* ApiLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,14 +76,6 @@
 				F61B269C2434C42700473E01 /* MovieServiceLocator.swift */,
 			);
 			path = ServiceLocator;
-			sourceTree = "<group>";
-		};
-		F61B269E2434C4B700473E01 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F61B269F2434C4CA00473E01 /* UIApplication.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F61B26A12434CC5F00473E01 /* Protocols */ = {
@@ -149,6 +142,7 @@
 		F6DC3FD22433C3FD00559132 /* work_4 */ = {
 			isa = PBXGroup;
 			children = (
+				F61B26BA2434EC4D00473E01 /* UILibrary */,
 				F6DC3FEC2433C8EE00559132 /* ApiLibrary */,
 				F6DC3FD32433C3FD00559132 /* AppDelegate.swift */,
 				F6DC3FD52433C3FD00559132 /* SceneDelegate.swift */,
@@ -156,7 +150,6 @@
 				F61B269B2434C40B00473E01 /* ServiceLocator */,
 				F61B26A92434D9AB00473E01 /* DBService */,
 				F61B26A12434CC5F00473E01 /* Protocols */,
-				F61B269E2434C4B700473E01 /* Extensions */,
 				F6DC3FDC2433C3FF00559132 /* Assets.xcassets */,
 				F6DC3FE12433C3FF00559132 /* LaunchScreen.storyboard */,
 				F6DC3FE42433C3FF00559132 /* Info.plist */,
@@ -199,6 +192,7 @@
 			name = work_4;
 			packageProductDependencies = (
 				F6DC3FEE2433C91700559132 /* ApiLibrary */,
+				F61B26BB2434ECA300473E01 /* UILibrary */,
 			);
 			productName = work_4;
 			productReference = F6DC3FD02433C3FD00559132 /* work_4.app */;
@@ -256,7 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6DC3FD42433C3FD00559132 /* AppDelegate.swift in Sources */,
-				F61B26A02434C4CA00473E01 /* UIApplication.swift in Sources */,
 				F61B26AF2434DB2800473E01 /* MovieItem+CoreDataClass.swift in Sources */,
 				F61B26B02434DB2800473E01 /* MovieItem+CoreDataProperties.swift in Sources */,
 				F61B26B62434DBCD00473E01 /* MovieService.swift in Sources */,
@@ -463,6 +456,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F61B26BB2434ECA300473E01 /* UILibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UILibrary;
+		};
 		F6DC3FEE2433C91700559132 /* ApiLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ApiLibrary;

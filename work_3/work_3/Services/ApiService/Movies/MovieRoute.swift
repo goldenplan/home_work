@@ -18,7 +18,7 @@ public enum MediaType: String, Codable{
 
 enum MovieRoute: URLRequestConvertible {
     
-    static let apiKey = "0564bb225da38996fdbb42d71ab58067"
+    static let apiKey = ""
     static let apiPath = "https://api.themoviedb.org/3/"
     static let imagePrefix = "https://image.tmdb.org/t/p/w300"
     

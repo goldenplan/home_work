@@ -1,0 +1,20 @@
+//
+//  UIApplcation.swift
+//  work_7
+//
+//  Created by Stanislav Belsky on 5/23/20.
+//  Copyright © 2020 Stanislav Belsky. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+extension UIApplication {
+    func endEditing(_ force: Bool) {
+        self.windows
+            .filter{$0.isKeyWindow}
+            .first?
+            .endEditing(force)
+    }
+}
+

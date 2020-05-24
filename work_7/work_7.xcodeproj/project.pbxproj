@@ -92,7 +92,6 @@
 			children = (
 				F63944C624790F7200F9408C /* AppDelegate.swift */,
 				F63944C824790F7200F9408C /* SceneDelegate.swift */,
-				F63944CA24790F7200F9408C /* RootView.swift */,
 				F6394503247957F700F9408C /* Objects */,
 				F63944F2247928A200F9408C /* Extensions */,
 				F63944EF24791BA800F9408C /* Views */,
@@ -129,6 +128,7 @@
 		F63944EF24791BA800F9408C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F63944CA24790F7200F9408C /* RootView.swift */,
 				F63944ED24791B0E00F9408C /* HomeView.swift */,
 				F63944F0247920A300F9408C /* NavigatioView.swift */,
 				F639450C2479606000F9408C /* TestView */,

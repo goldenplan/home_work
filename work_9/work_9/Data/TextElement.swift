@@ -15,8 +15,9 @@ struct TextElement {
         tryParse()
     }
     
-    let stringDate1 = #"^[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])$"#
-    let stringDate2 = #"^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$"#
+    let stringDate1 = #"^[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"#
+    let stringDate2 = #"^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d"#
+    let stringDate3 = #"^[0-9]{4}.(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01])"#
     let stringDigit = #"^\-?\d+(\.\d{0,})?$"#
     
     
@@ -40,6 +41,13 @@ struct TextElement {
             let date2Strings = resultsDate2.map{ String(string[Range($0.range, in: string)!]) }
             if let dateString = date2Strings.first{
                 return Util.dateFromString(string: dateString, format: "dd/MM/yyyy") ?? string
+            }
+            
+            let regexDate3 = try NSRegularExpression(pattern: stringDate2)
+            let resultsDate3 = regexDate3.matches(in: string, range: NSRange(string.startIndex..., in: string))
+            let date3Strings = resultsDate3.map{ String(string[Range($0.range, in: string)!]) }
+            if let dateString = date3Strings.first{
+                return Util.dateFromString(string: dateString, format: "dd.MM.yyyy") ?? string
             }
             
             let regexDigit = try NSRegularExpression(pattern: stringDigit)

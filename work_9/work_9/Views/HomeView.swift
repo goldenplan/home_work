@@ -25,6 +25,13 @@ struct HomeView: View {
             }.padding()
             
             Button(action: {
+                let url = URL(string: "https://zen.yandex.ru/media/goodchanges/karmicheskoe-znachenie-daty-02022020-chto-prigotovila-nam-vselennaia-v-etot-neobychnyi-den-5e307c1e4e72656569a2c82b")!
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }) {
+                Text("Other test site")
+            }.padding()
+            
+            Button(action: {
                 self.navigationStack.push(ShareView().environmentObject(ShareViewModel()), withId: String(describing: ShareView.self))
             }) {
                 Text("ShareView")

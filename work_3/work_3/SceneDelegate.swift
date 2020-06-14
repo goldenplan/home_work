@@ -17,9 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         
-        let locator = MovieServiceLocator()
-        locator.registerService(service: MovieApiService())
-        locator.registerService(service: MovieDBService())
+        
         
         let contentView = ContentView()
             .environmentObject(MovieViewModel(locator: locator))
